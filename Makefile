@@ -1,7 +1,7 @@
 # define CPPFLAGS=-I... for other (system) includes
 # define LDFLAGS=-L... for other (system) libs to link
 
-CC = g++ -g -Wno-narrowing -Wreturn-type -Wunused-function -Wreorder -Wunused-variable -Wfloat-conversion -Wimplicit-float-conversion
+CC = g++ -g -Wno-narrowing -Wreturn-type -Wunused-function -Wreorder -Wunused-variable -Wfloat-conversion
 
 CC_DEBUG = @$(CC) -std=c++17
 CC_RELEASE = @$(CC) -std=c++17 -O3 -DNDEBUG
